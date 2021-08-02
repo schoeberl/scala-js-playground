@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Martin's Scala.js Playground</title>
+  </head>
+  <body>
+  Hello<br>
+  <div>
+    <canvas style="display: block" id="hello" width="255" height="255"/>
+  </div>
+    <!-- Include Scala.js compiled code
+    TODO: where does the folder name scala-js-tutorial-fastopt come from? -->
+    <script type="text/javascript" src="./target/scala-2.13/scala-js-tutorial-fastopt/main.js"></script>
+  <script>
+    HelloWorld.drawMe(document.getElementById('hello'));
+ </script>
+  </body>
+</html>
