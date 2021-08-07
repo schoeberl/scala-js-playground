@@ -5,6 +5,10 @@ scalaVersion := "2.13.5"
 
 // This is an application with a main method
 scalaJSUseMainModuleInitializer := true
+// Select which one to use, if there are more than one
+// BUT, it does not work :-( => need to modify main function names
+// Compile/mainClass := Some("play.MyApp")
+
 
 libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.1.0"
 
